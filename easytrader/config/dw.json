@@ -1,0 +1,36 @@
+{
+  "login_page": "https://trade.dwzq.com.cn/login.php?do=verify&",
+  "login_api": "https://trade.dwzq.com.cn/login.php?do=do_verify",
+  "token_api": "https://trade.dwzq.com.cn/login.php?do=do_login&auto=1&",
+  "logout_api": "https://jy.yongjinbao.com.cn/winner_gj/gjzq/stock/exchange.action?function_id=20&login_type=stock",
+  "login": {
+    "yyb_name": 1,
+    "account_type": 0,
+    "account": "",
+    "is_save_account": 1,
+    "crpttype": 1,
+    "tradekey": "",
+    "commkey": "",
+    "embeded": ""
+  },
+  "buy": {
+  },
+  "sell": {
+  },
+  "position": {
+  },
+  "balance": {
+  },
+  "entrust": {
+  },
+  "cancel_entrust": {
+  },
+  "current_deal": {
+  },
+  "ipo_enable_amount": {
+  },
+  "exchangetype4stock": {
+  },
+  "account4stock": {
+  }
+}
