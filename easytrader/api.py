@@ -7,6 +7,7 @@ from .log import log
 from .xqtrader import XueQiuTrader
 from .yhtrader import YHTrader
 from .yjbtrader import YJBTrader
+from .dwtrader import DWTrader
 
 
 def use(broker, debug=True, **kwargs):
@@ -34,3 +35,5 @@ def use(broker, debug=True, **kwargs):
         return XueQiuTrader()
     if broker.lower() in ['gf', '广发']:
         return GFTrader()
+    if broker.lower() in ['dw', '东吴']:
+        return DWTrader()
