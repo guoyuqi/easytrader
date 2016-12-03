@@ -2,8 +2,13 @@
   "login_page": "https://trade.dwzq.com.cn/login.php?do=verify&",
   "login_api": "https://trade.dwzq.com.cn/login.php?do=do_verify",
   "token_api": "https://trade.dwzq.com.cn/login.php?do=do_login&auto=1&",
+  "token_re": "self.parent.login\\('([^']*)','([^']*)'\\)",
+  "trade_api": "https://trade.dwzq.com.cn/trade.php?token_id=%s",
+  "trade_re": "https://trade.dwzq.com.cn/trade.php?token_id=%s",
+  "token_re": "self.parent.login\\('([^']*)','([^']*)'\\)",
   "logout_api": "https://jy.yongjinbao.com.cn/winner_gj/gjzq/stock/exchange.action?function_id=20&login_type=stock",
-  "login": {
+  "account_info_api": "https://trade.dwzq.com.cn/stock_query.php",
+  "login_params": {
     "yyb_name": 1,
     "account_type": 0,
     "account": "",
@@ -13,24 +18,104 @@
     "commkey": "",
     "embeded": ""
   },
+  "account_holdings_params":
+  {
+        "page_currency":"R",
+        "cmd":"cmd_qu_gupiao",
+        "stockcode":"",
+        "stockname":"",
+        "price":"",
+        "kmsl":"",
+        "amount":"",
+        "client_cmd":"cmd_qu_gupiao",
+        "begin_date":"",
+        "end_date":"",
+        "table":"data_tb",
+        "zjzh": "",
+        "token_id": "",
+        "gdzh": "",
+        "mkcode":"2"
+  },
+  "account_capital_params":
+  {
+        "cmd":"cmd_zijin_query",
+        "stockcode":"",
+        "stockname":"",
+        "price":"",
+        "kmsl":"",
+        "amount":"",
+        "client_cmd":"cmd_zijin_query",
+        "table":"data_tb",
+        "zjzh": "",
+        "token_id": "",
+        "gdzh": "",
+        "mkcode":"2"
+  },
+  "head_maps": {
+            "d_2108": "交易所",
+            "d_2106": "股东账户",
+            "d_2102": "股票代码",
+            "d_2103": "股票名称",
+            "d_2124": "当前价格",
+            "d_2122": "成本价格",
+            "d_2123": "成本总额",
+            "d_2117": "持仓数量",
+            "d_2121": "持仓可用",
+            "d_2147": "持仓盈亏",
+            "d_3616": "盈亏百分比",
+            "d_2125": "持仓总额",
+            "d_2164": "持仓数量",
+            "d_3707": "成本总额",
+            "gdxm": "股东姓名",
+            "client_ip": "客户端ip",
+            "lg_account": "登录帐号",
+            "req_time": "请求次数",
+            "zjye": "资金余额",
+            "kyje": "可用金额",
+            "kqje": "可取金额",
+            "djje": "冻结金额",
+            "zjzh": "资金账号",
+            "gdzh": "股东帐号",
+            "zzc": "总持仓"
+  },
   "buy": {
+    "service_type": "stock",
+    "request_id": "buystock_302"
   },
   "sell": {
+    "service_type": "stock",
+    "request_id": "sellstock_302"
   },
   "position": {
+    "request_id": "mystock_403"
   },
   "balance": {
+    "request_id": "mystock_405"
   },
   "entrust": {
+    "request_id": "trust_401",
+    "sort_direction": 1,
+    "deliver_type": "",
+    "service_type": "stock"
   },
   "cancel_entrust": {
+    "request_id": "chedan_304"
   },
   "current_deal": {
+    "request_id": "bargain_402",
+    "sort_direction": 1,
+    "service_type": "stock"
   },
   "ipo_enable_amount": {
+    "request_id": "buystock_300"
   },
   "exchangetype4stock": {
+    "service_type": "stock",
+    "function_id": "105"
   },
   "account4stock": {
+    "service_type": "stock",
+    "function_id": "407",
+    "window_id": "StockMarketTrade"
   }
 }
